@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/logo paradoja.png" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/charline" rel="stylesheet">
+    <title>Librería Paradoja</title>
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <!--<nav class="menu">
+            <h1>Paradoja</h1>
+                <ul class="list1">
+                    <li class="menuLi"><a href="../index.html" class="nav1">INICIO</a></li>
+                    <li class="menuLi"><a href="../pages/nosotros.html" class="nav1">SOBRE NOSOTROS</a></li>
+                    <li class="menuLi"><a href="../pages/eventos.html" class="nav1">EVENTOS</a></li>
+                    <li class="menuLi"><a href="../pages/servicios.html" class="nav1">SERVICIOS</a></li>
+                    <li class="menuLi"><a href="../pages/contacto.html" class="nav1">CONTACTO</a></li>
+                </ul>
+        </nav>-->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand m-1" href="../index.html"><h5>Paradoja</h5></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title ">Paradoja</h5>
+                        <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column justify-content-between px-10">
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item p-3 py-md-1">
+                                <a class="nav-link " href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item p-3 py-md-1">
+                                <a class="nav-link " href="../pages/nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item p-3 py-md-1">
+                                <a class="nav-link " href="../pages/eventos.html">EVENTOS</a>
+                            </li>
+                            <li class="nav-item p-3 py-md-1">
+                                <a class="nav-link " href="../pages/servicios.html">SERVICIOS</a>
+                            </li>
+                            <li class=" p-3 py-md-1">
+                                <a class="nav-link " href="../pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-bottom d-lg-none align-self-center py-3">
+                        <a href=""><i class="bi bi-instagram px-2 text-white fs-2"></i></a>
+                        <a href=""><i class="bi bi-facebook px-2 text-white fs-2"></i></a>
+                        <a href=""><i class="bi bi-whatsapp px-2 text-white fs-2"></i></a>
+                    </div>
+              </section>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4>Realizá tu consulta</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresá tu nombre">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresá tu email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingresá tu teléfono">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <button class="btn">Enviar</button>
+                </div>
+                <div class="col-md-5">
+                    <h4>Contacto</h4><hr>
+                    <div class="mt-5">
+                        <div class="d-flex px-3">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <p> @libreriaparadoja</p>
+                        </div><hr>
+                        <div class="d-flex px-3 ">
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <p class=""> Librería Paradoja</p>
+                        </div><hr>
+                        <div class="d-flex px-3">
+                            <a href=""><i class="bi bi-whatsapp"></i></a>
+                            <p> 123456789</p>
+                        </div><hr>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+       
+        <div>
+            <div class="footerContact">
+                <h4>Contacto</h4>
+                    <a href="https://www.instagram.com/libreriaparadoja/?hl=es" target="_blank">Instagram</a>
+                    <a href="https://web.facebook.com/LibreriaParadoja" target="_blank">Facebook</a>
+                    <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+                </ul>
+            </div>
+            <div class="footerDerechos">
+                <p>&copy; 2024 - Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
