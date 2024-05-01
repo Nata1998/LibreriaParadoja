@@ -8,43 +8,6 @@
 body{
     background-color: #ffffff;
     min-height: 100vh;
-    flex-wrap: wrap;
-}
-
-
-.menu{
-    background-color: rgb(250, 222, 210);
-    display: flex;
-    align-items: center;
-    justify-content: space- ween;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold;
-}
-
-
-.list1{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menuLi{
-    float: left;
-}
-
-.menuLi a{
-    display: block;
-    color: rgb(255, 102, 102);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.menuLi a:hover{
-    color: white;
 }
 
 h1{
@@ -55,103 +18,115 @@ h1{
 
 .portada1 {
     width: 100%;
-}
-
-.eventoImagenes {
-    width: 500px;
-
-}
-
-.serviciosImagenes {
-    width: 700px;
-}
-
-footer{
-    background-color: rgb(255, 102, 102);
-    color: white;
-    align-self: flex-end;
-    width: 100%;
-    text-align: center;
+    border: 15px solid white;
 }
 
 .cardRecomendaciones {
     background-color: rgb(250, 222, 210);
     margin: 100px;
-    display: flex;
-    flex-direction: column;
-}
-
-.title1 {
-    color: rgb(255, 102, 102);
-    text-align: center;
-    margin: 3rem;
-    padding: 2rem;
-}
-
-.recomendacionesDiv {
+    padding: 10px;
     display: flex;
     flex-direction: row;
+}
+.card{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-1%);
+}
+.cardNosotros{
+    background-color: rgba(250, 222, 210, 0.486);
+}
+.cardNosotros:hover{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    transform: translateY(0%);
+}
+.nosotrosDiv{
+    display: flex;
+    background-color: rgba(250, 222, 210, 0.486);
+    margin: 70px 200px 530px 200px;
+    border-radius: 20px 50px 50px 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+.card-title{
+    color: rgb(255, 102, 102);
+}
+.nosotrosContImg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: wrap;
+    gap: 20px;
+    padding: 20px;
     justify-content: center;
 }
 
-.librosDiv {
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nosotrosImg img {
+    height: 300px;
+    border: 3px solid rgba(255, 102, 102, 0.377);
+    border-radius: 20px;
+    transition: all 700ms ease;
 }
-
-.imagenLibro{
-    width: 300px;
-}
-
-.recomendacionesDiv2 {
-    width: 300px;
-    margin: 10px;
-}
-
-
-.nosotrosDiv{
-    background-color: rgb(255, 153, 153);
-    margin: 70px 200px 530px 200px;
-    border: 20px solid rgb(255, 153, 153);
+.nosotrosImg img:hover {
+    height: 350px;
+    border: 3px solid rgba(255, 102, 102, 0.377);
     border-radius: 20px;
 }
-
-.nosotrosH {
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-    border-bottom: 2px solid #ffffff;
-}
-
-.nosotrosP {
-    padding-top: 10px;
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 .sectionEventos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 50px;
     margin-bottom: 415px;
 }
 
 .evento {
-    background-color: rgb(255, 153, 153);
+    background-color: rgba(255, 153, 153, 0.377);
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
     width: 500px;
 }
-
-
-.eventoImagen {
-    margin: 10px;
+.evento small{
+    color: #6c757d;
 }
 
+.eventoImagen {
+    text-align: center;
+}
+.eventoImagenes{
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 768p) {
+    .main-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+.cardEnvios{
+    background-color: rgba(255, 153, 153, 0.377);
+}
+.card-title, .card-text {
+    text-align: center;
+}
+.cardEnvios:hover{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    transform: translateY(0%);
+}
 .serviciosDiv{
-    background-color: rgb(250, 222, 210);
+    background-color: rgba(255, 153, 153, 0.377);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     margin: 20px 100px 100px 100px;
@@ -164,166 +139,53 @@ footer{
     margin-right: 20px;
 
 }
-/*
-.formulario {
-    background-color: rgb(255, 153, 153);
-    margin: 100px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
+.serviciosImagenes {
+    width: 500px;
 }
+/*NAV*/
 
-.contactoDiv {
-    display: grid;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(250, 222, 210);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 182px;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr; 
-    gap: 0px 0px;
-
+.navbar{
+    background-color: rgba(250, 222, 210, 0.486);
 }
-
-.container {
-    grid-area: 1 / 1 / 2 / 3;
-    padding: 20px;
-    padding-left: 100px;
-    margin: auto;
-}
-form{
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-}
-
-.input-group{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.contactoh2 {
-    color: rgb(255, 102, 102);
-    font-size: 35px;
-}
-
-.label{
-    color:rgb(26, 26, 26);
-    font-size: 15px;
-    font-weight: 600;
-}
-input, textarea {
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: rgb(238, 215, 215);
-    border: 2px solid rgb(238, 215, 215);
-    outline: none;
-}
-
-.contacto {
-    background-color: rgb(255, 153, 153);
-    grid-area: 1 / 2 / 2 / 3;
-    padding: 20px;
-    padding-right: 50px;
-    margin: auto;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.contactoh3 {
-    color: white;
-    text-align: center;
-}
-
-.serviciosh2{
-    text-align: center;
-    color: rgb(255, 153, 153);
-    margin-top: 20px;
-}*/
-
-/*NAV DE BOOSTRAP*/
-
-.navbar  {
-    background-color: rgb(250, 222, 210);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 102, 102);
-}
-
-#menuLateral{
-    background-color: rgb(250, 222, 210);
-    font-weight: bold;
+.navbar-brand{
+    font-family: 'charline', sans-serif;
+    font-size: 25px;
     color: rgb(255, 102, 102);
 }
 .nav-link{
+    color: rgb(255, 102, 102);
     font-weight: bold;
-    color: rgb(255, 102, 102);
 }
-h5 {
-    font-family: 'charline', sans-serif;
-    color: rgb(255, 102, 102);
-    font-size: 30px;
-}
-
-/*Form Bootstrap*/
-
-.container{
-    width: 60%;
-    padding: 45px;
-    border-radius: 0;
-    left: 50%;
-    top: 50%;
+footer{
+    background-color: rgb(255, 102, 102);
+    color: white;
+    text-align: center;
 }
 
 .row{
-    box-shadow: rgba(99, 99, 99, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.486);
 }
-.col-md-7{
-    background-color: rgb(250, 222, 210);
-    padding: 20px;
+.contactoDiv{
+    text-align: center;
 }
-.col-md-5{
+.btn{
     background-color: rgb(255, 102, 102);
-    text-align: center;
-    color: white;
 }
-
-.mt-5{
-    text-align: center;
-}
-
-.form.control {
-    height: 52px;
-    background: white;
-    color: black;
-    font-size: 14px;
-    border-radius: 2px;
-    box-sizing: none! important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+.btn:hover{
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 102, 102);
 }
 .bi{
-    font-size: 20px;
+    color: rgb(255, 102, 102);
 }
-.d-flex{
-    font-size: 18px;
-    padding-left: 18px;
+.bi-footer{
+    color: white;
 }
-
-@media only screen and (max-width:600px){
-    .container{
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        top: 80%;
-
-    }
+.bi-footer:hover{
+    color: #6c757d;
+}
+.footerDerechos p {
+    margin-bottom: 0;
 }
