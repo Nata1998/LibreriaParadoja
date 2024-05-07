@@ -1,191 +1,205 @@
-*{
-    margin: 0;
-    padding: 0; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
- }
-
-body{
-    background-color: #ffffff;
-    min-height: 100vh;
+.navbar {
+  background-color: rgba(250, 222, 210, 0.4862745098);
+  padding: 10px;
 }
-
-h1{
-    font-family: 'charline', sans-serif;
-    color: rgb(255, 102, 102);
-    font-size: 30px;
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-family: charline;
+  color: #ff6666;
+}
+.navbar .navbar-brand:hover {
+  color: #7f2524;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-weight: bold;
+  color: #ff6666;
+  font-size: 1rem;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #7f2524;
 }
 
 .portada1 {
-    width: 100%;
-    border: 15px solid white;
+  width: 100%;
+  height: auto;
 }
 
 .cardRecomendaciones {
-    background-color: rgb(250, 222, 210);
-    margin: 100px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
+  margin: 70px;
+  background-color: rgba(250, 222, 210, 0.4862745098);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
 }
-.card{
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
-    cursor: default;
-    transition: all 400ms ease;
+.cardRecomendaciones .card {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  transition: all 400ms ease;
 }
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-1%);
-}
-.cardNosotros{
-    background-color: rgba(250, 222, 210, 0.486);
-}
-.cardNosotros:hover{
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
-    transform: translateY(0%);
-}
-.nosotrosDiv{
-    display: flex;
-    background-color: rgba(250, 222, 210, 0.486);
-    margin: 70px 200px 530px 200px;
-    border-radius: 20px 50px 50px 20px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-}
-.card-title{
-    color: rgb(255, 102, 102);
-}
-.nosotrosContImg {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
+.cardRecomendaciones .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
 }
 
-.nosotrosImg img {
-    height: 300px;
-    border: 3px solid rgba(255, 102, 102, 0.377);
-    border-radius: 20px;
-    transition: all 700ms ease;
+.nosotrosMain .cardNosotros {
+  background-color: rgba(250, 222, 210, 0.4862745098);
+  border: none;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  transition: all 400ms ease;
 }
-.nosotrosImg img:hover {
-    height: 350px;
-    border: 3px solid rgba(255, 102, 102, 0.377);
-    border-radius: 20px;
+.nosotrosMain .cardNosotros .card-body h5 {
+  color: #ff6666;
+  font-size: 1.5rem;
 }
-.main-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+.nosotrosMain .nosotrosContImg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
-
-.sectionEventos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px;
-    margin-bottom: 415px;
+.nosotrosMain .nosotrosContImg .nosotrosImg img {
+  height: 300px;
+  border: 3px solid rgba(255, 102, 102, 0.377);
+  border-radius: 20px;
+  transition: all 700ms ease;
 }
-
-.evento {
-    background-color: rgba(255, 153, 153, 0.377);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 500px;
-}
-.evento small{
-    color: #6c757d;
+.nosotrosMain .nosotrosContImg .nosotrosImg img:hover {
+  height: 350px;
+  border: 3px solid rgba(255, 102, 102, 0.377);
+  border-radius: 20px;
 }
 
-.eventoImagen {
-    text-align: center;
+.main-container .sectionEventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.eventoImagenes{
-    max-width: 100%;
-    height: auto;
+.main-container .sectionEventos .eventos {
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-@media screen and (min-width: 768p) {
-    .main-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+.main-container .sectionEventos .eventos .evento {
+  background-color: rgba(250, 222, 210, 0.4862745098);
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
 }
-.cardEnvios{
-    background-color: rgba(255, 153, 153, 0.377);
+.main-container .sectionEventos .eventos .evento h3 {
+  color: #7f2524;
 }
-.card-title, .card-text {
-    text-align: center;
+.main-container .sectionEventos .eventos .evento small {
+  color: #7f2524;
 }
-.cardEnvios:hover{
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
-    transform: translateY(0%);
-}
-.serviciosDiv{
-    background-color: rgba(255, 153, 153, 0.377);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px 100px 100px 100px;
-    border-radius:  10px;
-    padding: 10px;
-}
-
-.serviciosP {
-    margin-top: 200px;
-    margin-right: 20px;
-
-}
-.serviciosImagenes {
-    width: 500px;
-}
-/*NAV*/
-
-.navbar{
-    background-color: rgba(250, 222, 210, 0.486);
-}
-.navbar-brand{
-    font-family: 'charline', sans-serif;
-    font-size: 25px;
-    color: rgb(255, 102, 102);
-}
-.nav-link{
-    color: rgb(255, 102, 102);
-    font-weight: bold;
-}
-footer{
-    background-color: rgb(255, 102, 102);
-    color: white;
-    text-align: center;
+.main-container .sectionEventos .eventoImagen img {
+  width: 600px;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.row{
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.486);
+.serviciosMain .cardEnvios {
+  background-color: rgba(250, 222, 210, 0.4862745098);
+  border: none;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  padding: 10px;
 }
-.contactoDiv{
-    text-align: center;
+.serviciosMain .cardEnvios .row .col-md-4 img {
+  border-radius: 10px;
 }
-.btn{
-    background-color: rgb(255, 102, 102);
+.serviciosMain .cardEnvios .row .col-md-8 .card-body {
+  padding: 10px;
+  text-align: center;
 }
-.btn:hover{
-    background-color: #ffffff;
-    border: 2px solid rgb(255, 102, 102);
+.serviciosMain .cardEnvios .row .col-md-8 .card-body h5 {
+  color: #ff6666;
+  font-size: 1.5rem;
+  padding-bottom: 30px;
 }
-.bi{
-    color: rgb(255, 102, 102);
+
+.mainContainer .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(250, 222, 210, 0.4862745098);
 }
-.bi-footer{
-    color: white;
+.mainContainer .container .row .consultasDiv {
+  padding: 20px;
+  border-radius: 10px;
 }
-.bi-footer:hover{
-    color: #6c757d;
+.mainContainer .container .row .consultasDiv h4 {
+  color: #7f2524;
+  text-align: center;
 }
-.footerDerechos p {
-    margin-bottom: 0;
+.mainContainer .container .row .consultasDiv form .mb-3 .form-label {
+  color: #7f2524;
 }
+.mainContainer .container .row .consultasDiv form .btn {
+  background-color: #ff9999;
+}
+.mainContainer .container .row .consultasDiv form .btn:hover {
+  background-color: #fdbc5e;
+}
+.mainContainer .container .row .contactoDiv {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .container .row .contactoDiv .contacto h4 {
+  color: #7f2524;
+}
+.mainContainer .container .row .contactoDiv .contacto .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .container .row .contactoDiv .contacto .redes .redesDiv {
+  padding: 5px;
+}
+.mainContainer .container .row .contactoDiv .contacto .redes .redesDiv i {
+  color: #ff9999;
+}
+.mainContainer .container .row .contactoDiv .contacto .redes .redesDiv i:hover {
+  color: #fdbc5e;
+}
+.mainContainer .container .row .contactoDiv .contacto .redes .redesDiv p {
+  text-align: center;
+}
+
+footer {
+  background-color: #ff6666;
+  display: flex;
+  text-align: center;
+  color: white;
+}
+footer .container .footerContact a {
+  color: white;
+}
+footer .container .footerContact a:hover {
+  color: #fdbc5e;
+}
+footer .container .footerDerechos:hover {
+  color: #fdbc5e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*# sourceMappingURL=estilo.css.map */

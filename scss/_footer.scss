@@ -1,0 +1,23 @@
+footer{
+    background-color: $tercerColor;
+    display: flex;
+    text-align: center;
+    color: white;
+    .container{
+        .footerContact{
+            a{
+                color: white;
+
+                &:hover{
+                    color: $quintoColor;
+                    
+                }
+            }
+        }
+        .footerDerechos{
+            &:hover{
+                color: $quintoColor;
+            }
+        }
+    }
+}

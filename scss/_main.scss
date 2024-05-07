@@ -1,0 +1,185 @@
+.cardRecomendaciones{
+    margin: 70px;
+    background-color: $primerColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    .card{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    transition: all 400ms ease;
+
+    &:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1%);
+    }
+    }
+}
+
+.nosotrosMain{
+    .cardNosotros{
+        background-color: $primerColor;
+        border: none;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        cursor: default;
+        transition: all 400ms ease;
+        .card-body{
+            h5{
+                color: $tercerColor;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .nosotrosContImg {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        
+        .nosotrosImg img{
+            height: 300px;
+            border: 3px solid rgba(255, 102, 102, 0.377);
+            border-radius: 20px;
+            transition: all 700ms ease;
+            &:hover{
+                height: 350px;
+                border: 3px solid rgba(255, 102, 102, 0.377);
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.main-container{
+    .sectionEventos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .eventos{
+            flex-direction: column;
+            width: 500px;
+            height: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            .evento{
+                background-color: $primerColor;
+                margin-bottom: 25px;
+                padding: 15px;
+                border-radius: 1rem;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+                h3{
+                    color: $cuartoColor;
+                }
+                small{
+                    color: $cuartoColor;
+                }
+            }
+        }
+        .eventoImagen{
+            img{
+                width: 600px;
+                height: auto;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+.serviciosMain{
+    .cardEnvios{
+        background-color: $primerColor;
+        border: none;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        cursor: default;
+        padding: 10px;
+        .row{
+            .col-md-4{
+                img{
+                    border-radius: 10px;
+                }
+            }
+            .col-md-8{
+                .card-body{
+                    padding: 10px;
+                    text-align: center;
+                    h5{
+                        color: $tercerColor;
+                        font-size: 1.5rem;
+                        padding-bottom: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.mainContainer{
+    .container{
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+            background-color: $primerColor;
+            .consultasDiv{
+                padding: 20px;
+                border-radius: 10px;
+                h4{
+                    color: $cuartoColor;
+                    text-align: center;
+                }
+                form{
+                    .mb-3{
+                        .form-label{
+                            color: $cuartoColor;
+                        }
+                    }
+                    .btn{
+                        background-color: $segundoColor;
+                        &:hover{
+                            background-color: $quintoColor;
+                        }
+                    }
+                }
+            }
+            .contactoDiv{
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+                .contacto{
+                    h4{
+                        color: $cuartoColor;
+                    }
+                    .redes{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .redesDiv{
+                            padding: 5px;
+                            i{
+                                color: $segundoColor;
+                                &:hover{
+                                    color: $quintoColor;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

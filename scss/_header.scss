@@ -1,0 +1,32 @@
+.navbar{
+    background-color: $primerColor;
+    padding: 10px;
+    .navbar-brand{
+        font-size: 2rem;
+        font-family: charline;
+        color: $tercerColor;
+
+        &:hover{
+            color: $cuartoColor;
+        }
+    }
+    .navbar-collapse{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    font-weight: bold;
+                    color: $tercerColor;
+                    font-size: 1rem;
+
+                    &:hover{
+                        color: $cuartoColor;
+                    }
+                }
+            }
+        }
+    }
+}
+.portada1 {
+    width: 100%;
+    height: auto;
+}
