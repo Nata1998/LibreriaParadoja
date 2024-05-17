@@ -1,12 +1,6 @@
+@import "page.scss";
 @import "var.scss";
 @import "body.scss";
 @import "header.scss";
 @import "main.scss";
 @import "footer.scss";
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}

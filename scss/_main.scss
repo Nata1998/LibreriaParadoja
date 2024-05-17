@@ -18,6 +18,7 @@
 }
 
 .nosotrosMain{
+    flex: 1;
     .cardNosotros{
         background-color: $primerColor;
         border: none;
@@ -54,6 +55,7 @@
 }
 
 .main-container{
+    flex: 1;
     .sectionEventos{
         display: flex;
         flex-wrap: wrap;
@@ -81,22 +83,29 @@
         }
         .eventoImagen{
             img{
-                width: 600px;
+                width: 500px;
                 height: auto;
                 margin-left: 50px;
                 margin-right: 50px;
+                margin-bottom: 10px;
             }
         }
     }
 }
 
 .serviciosMain{
+    display: flex;
+    justify-content: center;
+    flex: 1;
     .cardEnvios{
+        margin: 50px;
+        height: 100%;
         background-color: $primerColor;
         border: none;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
         cursor: default;
         padding: 10px;
+        text-align: center;
         .row{
             .col-md-4{
                 img{
@@ -125,12 +134,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            padding: 10px;
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
             background-color: $primerColor;
             .consultasDiv{
-                padding: 20px;
-                border-radius: 10px;
+                padding: 10px;
                 h4{
                     color: $cuartoColor;
                     text-align: center;
@@ -150,24 +161,22 @@
                 }
             }
             .contactoDiv{
-                text-align: center;
-                padding: 20px;
-                border-radius: 10px;
-                justify-content: center;
-                align-items: center;
+                margin: 10px;    
                 .contacto{
+                    align-items: center;                  
+
                     h4{
+                        text-align: center;
                         color: $cuartoColor;
                     }
                     .redes{
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
                         align-items: center;
                         .redesDiv{
                             padding: 5px;
                             i{
-                                color: $segundoColor;
+                                color: $cuartoColor;
                                 &:hover{
                                     color: $quintoColor;
                                 }
@@ -178,6 +187,11 @@
                         }
                         
                     }
+                }
+                .imgContact{
+                    margin-top: 25px;
+                    padding: 10px;
+                    width: 100%;
                 }
             }
         }
